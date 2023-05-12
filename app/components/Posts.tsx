@@ -40,9 +40,7 @@ const loadDataFromServer = async () => {
   return response;
 };
 
-function Posts() {
-  const articles = loadDataFromServer();
+export default async function Posts() {
+  const articles = await loadDataFromServer();
   return <div>Posts {JSON.stringify(articles)}</div>;
 }
-
-export default Posts;

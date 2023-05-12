@@ -1,11 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import React from "react";
 
 function HomeButton() {
   const router = useRouter();
   const handleHomeRoute = () => {
-    router.push("/dashboard");
+    router.push("/layoutdemo");
   };
   return (
     <button

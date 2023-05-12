@@ -40,8 +40,8 @@ const loadDataFromServer = async () => {
   return response;
 };
 
-function Feeds() {
-  const articles = loadDataFromServer();
+async function Feeds() {
+  const articles = await loadDataFromServer();
   return <div>Feeds {JSON.stringify(articles)}</div>;
 }
 
